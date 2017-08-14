@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.css">
+        <script src="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js"></script>
+        <script>
+            var data = {
+    'Chrome': {
+        '2010-10-01': 10,
+        '2010-10-02': 21
+    },
+    'Firefox': {
+        '2010-10-01': 14,
+        '2010-10-02': 20
+    }
+};
+$('#chart').MPChart({chartType: 'line', data: data});
+        </script>
+    </head>
+    <body class="mixpanel-platform-body">
+        <div class="mixpanel-platform-section">
+            <div id="chart" style="margin-top: 10px;"></div>
+        </div>
+    </body>
+</html>
